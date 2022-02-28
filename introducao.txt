@@ -1,0 +1,19 @@
+O que é o Git?
+
+Git é um sistema de controle de versão de arquivos;
+Com ele podemos desenvolver projetos colaborativos com facilidade, sem que uma pessoa sobre escreva o que a outra fez.
+
+Controle de versões
+    • Registra diferentes modificações de um arquivo;
+    • Permite recuperar uma versão específica;
+    • Pode resolver os seguintes problemas:
+        ◦ Perda de arquivos importantes;
+        ◦ Resgate de versões anteriores.
+
+
+O que é o GitHub?
+    • Serviço de hospedagem de projetos Git;
+    • Permite projetos privados ou Open Source;
+    • Ajuda a desenvolver um networking entre os programadores;
+    • Serve como um portfólio online.
+

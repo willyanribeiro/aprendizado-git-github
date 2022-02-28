@@ -1,0 +1,37 @@
+Crie sua conta no GitHub caso não tenha ainda.
+
+Existem duas formas de clonar um projeto no GitHub: pelo HTTPS (mais fácil) ou pela chave SSH (mais seguro).
+Vamos aprender pelo método HTTPS agora.
+Apenas como exemplo, vamos clonar o projeto “facebook / create-react-app” que está disponível no GitHub. Clique em “Code” e copie o link HTTPS.
+
+Abra o Terminal, crie uma pasta, entre nessa pasta e rode o comando abaixo para clonar o projeto desejado:
+git clone [cole aqui o link HTTPS copiado no GitHub]
+
+Agora podemos entrar na pasta do projeto (create-react-app) e abrir o VSCode para trabalhar nele (rodar code .).
+
+
+Criando um novo repositório no GITHUB
+Para criar um novo repositório no GitHub, basta clicar nos botões determinados para isso na página inicial.
+
+Ao criar o repositório, aparecerá a tela com as instruções de como criar esse repositório na linha de comando.
+Um resumo dessas instruções são:
+1.Rode o comando: git init
+2.Crie o arquivo README.md
+3.Adicione o README.md à pasta Stage através do comando: git add README.md
+4.Adicione o arquivo README.md à pasta workdir pelo comando: git commit -m "Inclusão do README"
+5.Rode o comando dado pelo GitHub: git branch -M main
+6.Suba o projeto para o GitHub através do comando dado no GitHub: git remote add origin [link criado pelo GitHub]
+7.Suba o código para o GitHub usando o comando dado também pelo GitHub: git push -u origin main (note que estou “empurrando” – pushing – meu projeto para a pasta principal do projeto original no GitHub).
+Pronto! Seu repositório local está conectado ao repositório no GitHub.
+
+
+
+Baixando as atualizações de um projeto
+Para baixar as atualizações feitas por outros programadores em um projeto colaborativo no GitHub, basta rodar o comando:
+git pull origin main (note que estamos “puxando” – pulling – as atualizações do GitHub para nossa máquina local).
+
+
+Ignorando Arquivos
+Vamos falar agora da possibilidade de escolher o que sobe ou não para o GitHub. Para isso, criaremos o arquivo “.gitignore”.
+Todos os arquivos do projeto cujos nomes forem listados no arquivo “.gitignore” não subirão para o GitHub.
+

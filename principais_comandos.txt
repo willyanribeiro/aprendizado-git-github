@@ -1,0 +1,37 @@
+git status 
+>> mostra se o estado do arquivo é monitorado (Arquivos do último Snapshoot, 
+isto é, aqueles arquivos que já sofreram o commit e que agora estão sendo monitorados 
+pelo Git) ou não monitorado (São arquivos novos que não estavam no último Snapshoot, 
+ou seja, Arquivos que não estão em seleção - arquivos que não dei um “git add”).
+
+
+git add [nome do arquivo].[extensão do arquivo]
+>> adiciono o arquivo para a pasta Stage, mas ainda não sofreu commit.
+
+
+git commit -m "[descrever resumo da alteração feita]"
+>> adiciono o arquivo para a pasta Work, isto é, o arquivo sofre commit e passa a ser 
+um arquivo monitorado.
+
+
+Existem quatro comandos que podem ser usados no Terminal para visualizar os logs:
+git log
+git log –pretty=oneline >> Resume a apresentação dos logs em uma linha respectivamente
+git log –pretty=oneline -1 >> Mostra apenas a última alteração feita
+git log --stat >> Mostra o status de cada alteração feita
+
+
+Visualizando as diferenças
+No dia-a-dia de programação, é importante você dominar o Diff, que é um comando pelo qual é possível visualizar as diferenças entre os commits dados num projeto ao longo do tempo. Quando ocorre um bug, por exemplo, é necessário comparar as versões antes e depois do commit.
+    • Git diff >> lista todos os arquivos de uma pasta que sofreram modificações e mostra qual modificação foi feita.
+    • Git diff [nome do arquivo].[extensão do arquivo] >> mostra somente o arquivo especificado e suas modificações.
+    • Git diff –name-only >> mostra somente o nome do arquivo que foi modificado.
+    • Git add . >> vai incluir para o Stage todos os arquivos que estão como não monitorados ou que foram modificados.
+Se ao rodar o comando git diff não aparecer nada na linha do terminal, significa que não há diferenças entre os arquivos da pasta workdir (pasta de trabalho) e da pasta head (pasta que contém os últimos commits).
+
+
+Desfazendo alterações
+Como fazemos para reverter alguns procedimentos, por exemplo, mandar códigos para a Stage ou alterar um commit.
+    • Git commit –amend >> altera um “git commit” feito anteriormente de modo a incluir outro commit e alterar a descrição do commit.
+    • Git reset HEAD [nome do arquivo].[extensão do arquivo] >> remove um arquivo da área de seleção, isto é, o arquivo sai de Stage mas ainda não volta para seu estado inicial antes da mudança.
+    • Git chekout – [nome do arquivo].[extensão do arquivo] >> desfaz as modificações no próprio arquivo, isto é, o arquivo volta ao seu estado inicial antes do commit.

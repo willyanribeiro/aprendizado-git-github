@@ -1,0 +1,30 @@
+O que são Branchs
+    Branchs (ramos) servem para desenvolver features separadas.
+    A branch master (ou main) é a principal.
+    É possível misturar as branchs usando o comando merge.
+
+
+Ao rodar o comando abaixo, verificamos quais branchs existem no projeto:
+git branch
+
+Ao rodar o comando abaixo, criamos uma branch nova:
+git branch [nome da nova branch]
+
+Ao rodar o comando abaixo, eu entro na branch escolhida:
+git checkout [nome da branch escolhida]
+
+Ao rodar o comando abaixo, eu excluo uma branch:
+git branch -d [nome da branch a ser deletada]
+
+Ao rodar o comando abaixo, eu crio uma nova branch e entro nela diretamente:
+git checkout -b [nome da nova branch]
+
+
+
+O que é merge e como utilizar
+    Envia as mudanças de uma branch para outra.
+    Apenas a branch alvo sofrerá alterações.
+
+Por exemplo, criamos o arquivo vostok1.txt na branch vostok1. Depois, acessamos a branch master e rodamos o comando abaixo para que o arquivo vostok1.txt fosse adicionado na branch master:
+git merge vostok1
+

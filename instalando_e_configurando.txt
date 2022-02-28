@@ -1,0 +1,22 @@
+Instalando o Git
+https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git
+
+
+Configurando o Git
+Vamos fazer duas configurações bem básicas no Git que são: Git Name e Git E-mail.
+
+Configurando seu Git Name
+Abra seu Terminal e digite: git config –global user.name “[digite seu nome]”
+O ‘--global’ é pra que esse user name seja usado em qualquer commit que você fizer em qualquer projeto.
+
+Configurando seu Git E-mail
+Abra seu Terminal e digite: git config –global user.email “[digite seu e-mail]”
+O ‘--global’ é pra que esse user e-mail seja usado em qualquer commit que você fizer em qualquer projeto.
+
+Para saber se as configurações ficaram corretas, rode o seguinte comando no seu terminal: 
+git config –list
+
+
+Criando um novo repositório
+No Terminal, crie uma nova pasta. Depois, rode o comando: git init
+Dessa forma, foi criada toda a estrutura para mudança dos arquivos do projeto.
