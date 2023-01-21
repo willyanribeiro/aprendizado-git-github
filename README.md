@@ -1,1 +1,1 @@
-Projeto aprendendo Git e GitHub para me tornar um programador Java Script Full Stack.
+Projeto aprendendo Introdução a Teoria das Probabilidades na USP através de projetos em Python para simulações de problemas!
